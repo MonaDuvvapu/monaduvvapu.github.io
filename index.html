@@ -68,6 +68,7 @@
       <h3 data-aos="fade-up">Engineer. Analyst. Tech Consultant.</h3>
 	  <h2 data-aos="fade-up">Passionate | Adaptable | Team Player</h2>
 	  <div class="btn-container" data-aos="fade-up" data-aos-delay="200">
+	  <!--
 		<div class="dropdown">
         <button class="btn-get-started dropbtn">Resume</button>
         <div class="dropdown-content">
@@ -76,6 +77,7 @@
           <a href="assets/Mona_DevOps.pdf" class="btn-get-started scrollto" target="_blank">DevOps Engineer</a>
         </div>
       </div>
+	  -->
 		<a href="#about" class="btn-get-started scrollto">About me</a>
 	  </div>
 	</div>
@@ -96,13 +98,8 @@
           <li><a class="nav-link scrollto" href="#education">Education</a></li>
 		  <li><a class="nav-link scrollto" href="#experience">Experience</a></li>
           <li><a class="nav-link scrollto " href="#skills">Skills</a></li>
-		  <li class="dropdown"><a href="#projects"><span>Projects</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="engineerprojects">Engineer</a></li>
-              <li><a href="analystprojects">Analyst</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#projects"><span>Resume</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto " href="#projects">Projects</a></li>
+          <li class="dropdown"><a href="#resume"><span>Resume</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
 			  <li><a href="assets/Mona_DevOps.pdf" target="_blank">DevOps Engineer</a></li>
               <li><a href="engineerprojects" target="_blank">Data Engineer</a></li>
@@ -305,7 +302,213 @@
       </div>
     </section>
 
+      <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="main-font">My<span class="text-blue main-font"> Projects</span></h2>
+        <div class="project-row" data-aos="fade-up">
+          <div class="project-left">
+            <img src="assets/img/gap_project.png" class="img-fluid" alt="">
+          </div>
+		  
+          <div class="project-right">
+		  <div class="project-links">
+				<h3>Optimizing Gap Trends and Market Strategy
+				<a href="https://github.com/MonaDuvvapu/WebDataAnalytics" class="btn-blue-outline btn-small mx-1" target="_blank">(<i class="fab fa-github"></i> Code)</a></h3>
+            </div>
+            
+            <ul class="tech-stack-list">
+              <p class="text-grey"><b>Made with: </b></p>
+              <li><span class="iconify" data-icon="logos:python" data-inline="false"></span></li>
+            </ul>
+			<p><b>Domains: Web Scraping, Case Aanlysis, Competitive Strategy</b></p>
+			<p>Gap's CEO Art Peck fired the creative directors and shifted to a data-driven approach for deciding the clothing line using big data sources.</p>
+            <ul>
+				<li><b>Challenges:</b> Forecasting fashion trends across design aspects like color, fabric, pattern and analyzing if the data-driven approach worked equally for Gap's three brands (Gap, Old Navy, Banana Republic).</li>
+				<li><b>Data sources identified:</b> In-house data (sales, reviews, website traffic) and external data (competitors, Google trends, e-commerce best sellers, social media).</li>
+				<li><b>External data analysis:</b> Competitor analysis (scraping Zara's jeans offerings), e-commerce ranking prediction model, and social media/review analysis.</li>
+				<li><b>Limitations:</b> Small sample sizes for scraping competitors and e-commerce rankings across all product categories.</li>
+				<li><b>Recommendations:</b> Balanced approach combining data-driven analysis with creative directors' intuition, especially for premium brands like Banana Republic.</li>
+			</ul>
 
+          </div>
+        </div>
+
+          <div class="project-row" data-aos="fade-up">
+          <div class="project-left">
+            <img src="assets/img/DB_project.jpg" alt="">
+          </div>
+          <div class="project-right">
+		  <div class="project-links">
+				<h3>Marketing Campaign Optimization Database Refinement
+				<a href="https://github.com/MonaDuvvapu/" class="btn-blue-outline btn-small mx-1" target="_blank"><i class="fab fa-github"></i></a></h3>
+            </div>
+            
+            <ul class="tech-stack-list">
+              <p class="text-grey"><b>Made with: </b></p>
+              <li><span class="iconify" data-icon="logos:mysql"></span></li>
+            </ul>
+			<p><b>Domains: Data Engineering, Normalization, Query Optimization</b></p>
+			<p>This project was focused on managing and optimizing the database for ASP OL Media, a marketing company that sends email campaigns on behalf of large corporations. Key aspects of this project were:</p>
+			<ul>
+				<li>Understanding the existing database structure and dataset.</li>
+				<li>Data cleaning to ensure data quality and consistency.</li>
+				<li>Creating an Entity-Relationship Diagram (ERD) to visually represent the database structure and table relationships.</li>
+				<li>Constructing a well-defined relational schema, specifying tables, attributes, and data types.</li>
+				<li>Applying normalization techniques to minimize redundancy and improve efficiency by creating two associative tables and one additional table.</li>
+				<li>Establishing appropriate primary and foreign keys to maintain data integrity.</li>
+			</ul>
+          </div>
+        </div>
+
+<!-- Comments 
+
+        <div class="project-row" data-aos="fade-up">
+          <div class="project-left">
+            <img src="/img/asset-trading.png" alt="">
+          </div>
+          <div class="project-right">
+            <h3>Company Asset Trading</h3>
+            <ul class="tech-stack-list">
+              <p class="text-grey"><b>Made with: </b></p>
+              <li><span class="iconify" data-icon="logos:java" data-inline="false"></span></li> 
+              <li><span class="iconify" data-icon="logos:mariadb-icon" data-inline="false"></span></li>
+            </ul>
+            <p>Worked on a team of four to develop a client-server system in Java for trading of virtual assets within departments of a company. Facilitated trades via a marketplace model where users can buy and sell assets. Admins of an organisation can create assets, users and modify details. Uses MariaDB as a database and Swing for the GUI.</p>
+            <div class="project-links">
+              <a href="https://github.com/ben04rogers/organisation-asset-trading" class="btn-blue-outline btn-small" target="_blank"> <i class="fab fa-github"></i
+                > Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-row" data-aos="fade-up">
+          <div class="project-left">
+            <img src="img/euphorus.png" alt="">
+          </div>
+          <div class="project-right">
+            <h3>Euphorus</h3>
+            <ul class="tech-stack-list">
+              <p class="text-grey"><b>Made with: </b></p>
+              <li><span class="iconify" data-icon="logos:javascript" data-inline="false"></span></li>
+              <li><span class="iconify" data-icon="logos:react" data-inline="false"></span></span></li>
+              <li><span class="iconify" data-icon="logos:bootstrap" data-inline="false"></span></li>
+            </ul>
+            <p>React application that uses a REST API that I made which holds country happiness data collected from the World Happiness Report initiative. Users can register, login and view happiness data by country. Users can filter the data by year, country and search limit. AG Grid and Chart.js were used to present the data.</p>
+            <div class="project-links">
+
+              <a href="https://github.com/ben04rogers/cab230assignment1" class="btn-blue-outline btn-small" target="_blank"> <i class="fab fa-github"></i
+                > Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-row" data-aos="fade-up">
+          <div class="project-left">
+            <img src="img/euphorus-backend.png" alt="">
+          </div>
+          <div class="project-right">
+            <h3>Country Happiness API</h3>
+            <ul class="tech-stack-list">
+              <p class="text-grey"><b>Made with: </b></p>
+              <li><span class="iconify" data-icon="logos:javascript" data-inline="false"></span></li>
+              <li><span class="iconify" data-icon="logos:nodejs" data-inline="false"></span></li>
+              <li><span class="iconify" data-icon="logos:swagger" data-inline="false" data-width="30" data-height="30"></span></li>
+              <li><span class="iconify" data-icon="logos:express" data-inline="false"></span></li>
+              <li><span class="iconify" data-icon="cib:mysql" data-inline="false" data-width="30" data-height="30"></span></li>
+              <li><span class="iconify" data-icon="logos:knex" data-inline="false"></span></li>
+            </ul>
+            <p>Developed and deployed an Express API to support the front-end of the Euphorus Happiness Data web application. Routes support query parameters and authorization using JWT. Includes endpoints for countries, rankings, factors, registration, login, and profile. Tested software extensively with Jest and created Swagger documentation for the API as well.</p>
+            <div class="project-links">
+              <a href="https://salty-refuge-23420.herokuapp.com/" class="btn-blue btn-small" target="_blank"> <i class="fas fa-external-link-alt"></i
+                > Live</a>
+              <a href="https://github.com/ben04rogers/cab230assignment2" class="btn-blue-outline btn-small mx-1" target="_blank"> <i class="fab fa-github"></i
+                > Code</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-row" data-aos="fade-up">
+          <div class="project-left" >
+            <img src="img/techprowl2.png" alt="">
+          </div>
+          <div class="project-right">
+            <h3>Techprowl Computer Auction</h3>
+            <ul class="tech-stack-list">
+              <p class="text-grey"><b>Made with: </b></p>
+              <li><span class="iconify" data-icon="logos:python" data-inline="false"></span></li>
+              <li><span class="iconify" data-icon="logos:bootstrap" data-inline="false"></span></li>
+              <li><span class="iconify" data-icon="logos:sqlite" data-inline="false"></span></li>
+            </ul>
+            <p>Computer Auction CRUD application built with Flask that allows users to bid, review, login/register, post new listings, manage listings, search by keyword, and keep a watch list. The website is responsive and uses Bootstrap. Internal server errors and page not found errors are also handled appropriately. The project was developed with a team using Git.</p>
+            <div class="project-links">
+              <a href="https://techprowl.herokuapp.com" class="btn-blue btn-small hover-bg-light" target="_blank"> <i class="fas fa-external-link-alt"></i
+                > Live</a>
+              <a href="https://github.com/ben04rogers/computer-auction" class="btn-blue-outline btn-small mx-1" target="_blank"> <i class="fab fa-github"></i
+                > Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-row" data-aos="fade-up">
+          <div class="project-left">
+            <img src="img/task-manager.png" alt="">
+          </div>
+          <div class="project-right">
+            <h3>Task Manager Console App</h3>
+            <ul class="tech-stack-list">
+              <p class="text-grey"><b>Made with: </b></p>
+              <li><span class="iconify" data-icon="devicon:csharp" data-inline="false"></span></li>
+            </ul>
+            <p>Console app that manages tasks in a project. Users can load projects from a file and generate a seqeuence to complete them in, based on each task's dependencies. Users can also find earliest possible commencement time of each task, add new tasks, update tasks, remove tasks, and save the results to a text file.</p>
+            <div class="project-links">
+              <a href="https://github.com/ben04rogers/task-manager" class="btn-blue-outline btn-small" target="_blank"> <i class="fab fa-github"></i
+                > Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-row" data-aos="fade-up">
+          <div class="project-left">
+            <img src="img/bfsproject.JPG" alt="">
+          </div>
+          <div class="project-right">
+            <h3>Family Tree Shortest Path</h3>
+            <ul class="tech-stack-list">
+              <p class="text-grey"><b>Made with: </b></p>
+              <li><span class="iconify" data-icon="logos:python" data-inline="false"></span></li>
+            </ul>
+            <p>Python program that implements a breadth-first search algorithm to generate a minimal spanning tree. Problem was to calculate a shortest path from a starting vertex in a graph to each other vertex. The vertices represent people and each person is related to every other person through parent-child relationships. A person can see how they are related to each other person in the tree.</p>
+            <div class="project-links">
+              <a href="https://www.youtube.com/watch?v=VXCZKsqupxA" class="btn-blue btn-small hover-bg-light" target="_blank"> <i class="fab fa-youtube"></i> Demo</a>
+              <a href="https://github.com/ben04rogers/breadth-first-search" class="btn-blue-outline btn-small mx-1" target="_blank"> <i class="fab fa-github"></i
+                > Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-row" data-aos="fade-up">
+          <div class="project-left">
+            <img src="img/binary-game.png" alt="">
+          </div>
+          <div class="project-right">
+            <h3>Arduino Binary Game</h3>
+            <ul class="tech-stack-list">
+              <p class="text-grey"><b>Made with: </b></p>
+              <li><span class="iconify" data-icon="devicon:c" data-inline="false"></span></li>
+            </ul>
+            <p>Binary game written in C that runs on an Arduino Uno using Tinkercad. The game aims to help users learn binary by challenging them to input different integers in their binary form within a time limit.</p>
+            <div class="project-links">
+              <a href="https://www.youtube.com/watch?v=A6n6XDk4Unw&feature=youtu.be" class="btn-blue btn-small hover-bg-light" target="_blank"> <i class="fab fa-youtube"></i> Demo</a>
+              <a href="https://github.com/ben04rogers/binary-game-microcontroller" class="btn-blue-outline btn-small mx-1" target="_blank"> <i class="fab fa-github"></i
+                > Code</a>
+            </div>
+          </div>
+        </div>
+		
+-->
+		
+      </div>
+    </section>
 
 
   </main><!-- End #main -->
@@ -329,7 +532,7 @@
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright <strong><span>Mona</span></strong>. All Rights Reserved
+        &copy; 2024 <strong><span>Sai Mona Duvvapu</span></strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->
