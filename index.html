@@ -40,6 +40,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600;700;800;900&display=swap">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
   
   <link
@@ -85,27 +87,24 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <div class="logo">
-        <a href="index.html">Mona</a>
-      </div>
-
+    <div class="container d-flex align-items-center">
       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#education">Education</a></li>
-		  <li><a class="nav-link scrollto" href="#experience">Experience</a></li>
-          <li><a class="nav-link scrollto " href="#skills">Skills</a></li>
-          <li><a class="nav-link scrollto " href="#projects">Projects</a></li>
-          <li class="dropdown"><a href="#resume"><span>Resume</span> <i class="bi bi-chevron-down"></i></a>
+        <ul class="nav justify-content-center">
+          <li><a class="nav-link scrollto active" href="#hero"><b>Home</b></a></li>
+          <li><a class="nav-link scrollto" href="#about"><b>About</b></a></li>
+          <li><a class="nav-link scrollto" href="#education"><b>Education</b></a></li>
+		  <li><a class="nav-link scrollto" href="#experience"><b>Experience</b></a></li>
+          <li><a class="nav-link scrollto " href="#skills"><b>Skills</b></a></li>
+          <li><a class="nav-link scrollto " href="#projects"><b>Projects</b></a></li>
+		  <li><a class="nav-link scrollto " href="#certifications"><b>Certifications</b></a></li>
+          <li class="dropdown"><a href="#resume"><span><b>Resume</b></span> <i class="bi bi-chevron-down"></i></a>
             <ul>
 			  <li><a href="assets/Mona_DevOps.pdf" target="_blank">DevOps Engineer</a></li>
               <li><a href="engineerprojects" target="_blank">Data Engineer</a></li>
               <li><a href="analystprojects" target="_blank">Data/Business Analyst</a></li>
             </ul>
           </li>
+		  <li><a class="nav-link scrollto " href="#contact"><b>Contact Me</b></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -141,7 +140,7 @@
                 <li><i class="bx bx-check-double"></i> Place of Residence: Indiana, United States</li>
 				
               </ul>
-                Born and raised in Hyderabad, India, I hold a Bachelor's degree in <b>Information Technology</b> and have 3+ years of experience at Ford Motor Pvt. Ltd. </br> </br>
+                Born and raised in Hyderabad, India, I hold a Bachelor's degree in <b>Information Technology</b> and have <b>3+ years</b> of experience at Ford Motor Pvt. Ltd. </br> </br>
               <p>
 				I am passionate about using technology to solve complex problems and drive innovation through automation and data analysis. I thrive in challenging roles that foster continuous learning, and I look forward to contributing to transformative projects in the future.
               </p>
@@ -164,18 +163,18 @@
             <div class=" mt-5 mt-lg-0" data-aos="fade-up">
               
               <h4>Purdue University</h4>
-			  <p>Degree: Master of Science</p>
-              <p>Major: Business Analytics & Information Management</p>
-			  <p>Year: 2023 - 2024 </p>
+			  <p><b>Degree:</b> Master of Science</p>
+              <p><b>Major:</b> Business Analytics & Information Management</p>
+			  <p><b>Year:</b> 2023 - 2024 </p>
             </div>
 			</div>
 			<div class="col-lg-6 order-1 order-lg-2">
             <div class="mt-5 mt-lg-0" data-aos="fade-up" >
               
               <h4>Chaitanya Bharathi Institute of Technology</h4>
-              <p>Degree: Bachelor of Engineering</p>
-              <p>Major: Information Technology</p>
-			  <p>Years: 2016 - 2020</p>
+              <p><b>Degree:</b> Bachelor of Engineering</p>
+              <p><b>Major:</b> Information Technology</p>
+			  <p><b>Years:</b> 2016 - 2020</p>
             </div>
           </div>
 		  </div>
@@ -189,7 +188,7 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Work Experience</h2>
+          <h2 class="section-title main-font" data-aos="fade-in">Work <span class="text-blue main-font">Experience</span></h2>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
@@ -280,18 +279,24 @@
     <section id="skills" class="skills">
       <div class="container" data-aos="fade-in"> 
         <h2 class="text-black main-font">Technical <span class="text-blue main-font">Skills</span></h2>
-        <ul class="skills-icons">
-          
-          <li><span class="iconify" data-icon="logos:javascript" data-inline="false" data-width="90px" data-height="90px"></span><span>JavaScript</span></li>      
+        <ul class="skills-icons">         
+		  <li><span class="iconify" data-icon="logos:jenkins" data-inline="false" data-width="90px" data-height="90px"></span><span>Jenkins</span></li> 
           <li><span class="iconify" data-icon="logos:python" data-inline="false" data-width="90px" data-height="90px"></span><span>Python</span></li>
+		  <li><span class="iconify" data-icon="file-icons:rstudio" data-inline="false" data-width="90px" data-height="90px" style="color: #406a91"></span><span>R Studio</span></li>
           <li><span class="iconify" data-icon="logos:java" data-inline="false" data-width="90px" data-height="90px"></span><span>Java</span></li>
           <li><span class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false" data-width="90px" data-height="90px"></span><span>HTML</span></li>
           <li><span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false" data-width="90px" data-height="90px"></span><span>CSS</span></li>
+		  <li><span class="iconify" data-icon="logos:javascript" data-inline="false" data-width="90px" data-height="90px"></span><span>JavaScript</span></li> 
           <li><span class="iconify" data-icon="logos:git-icon" data-inline="false" data-width="90px" data-height="90px"></span><span>Git</span></li>
           <li><span class="iconify" data-icon="logos:bootstrap" data-inline="false" data-width="90px" data-height="90px"></span><span>Bootstrap</span></li>
           <li><span class="iconify" data-icon="logos:mysql" data-inline="false" data-width="90px" data-height="90px"></span><span>MySQL</span></li>
           <li><span class="iconify" data-icon="flat-color-icons:linux" data-inline="false" data-width="90px" data-height="90px"></span><span>Linux</span></li>       
           <li><span class="iconify aws-logo" data-icon="logos:aws" data-inline="false" data-width="90px" data-height="90px"></span><span class="text-center">Amazon Web <br> Services</span></li>  
+		  <li><span class="iconify" data-icon="logos:tableau" data-inline="false" data-width="90px" data-height="90px"></span><span>Tableau</span></li>
+		  <li><span class="iconify" data-icon="logos:microsoft-power-bi" data-inline="false" data-width="90px" data-height="90px"></span><span>Power BI</span></li> 
+		  <li><span class="iconify" data-icon="logos:microsoft-azure" data-inline="false" data-width="90px" data-height="90px"></span><span>Microsoft Azure</span></li>  
+		  <li><span class="iconify" data-icon="simple-icons:microsoftexcel" data-inline="false" data-width="90px" data-height="90px" style="color: #0f580e"></span><span>Microsoft Excel</span></li>
+		  <li><span class="iconify" data-icon="file-icons:sas" data-inline="false" data-width="90px" data-height="90px" style="color: #406a91"></span><span>SAS EM</span></li>
         </ul>
       </div>
 
@@ -510,8 +515,37 @@
       </div>
     </section>
 
+	<section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title main-font" data-aos="fade-in">Contact <span class="text-blue main-font">Me</span></h2>
+        <div class="card-container">
+          <div class="card" data-aos="fade-in">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>monaduvvapu@gmail.com</p>
+          </div>
+          <div class="card" data-aos="fade-in" data-aos-delay="100">
+            <i class="fab fa-github"></i>
+            <h3>GitHub</h3>
+            <a href="https://github.com/MonaDuvvapu" class="text-blue" target="_blank">MonaDuvvapu</a>
+          </div>
+          <div class="card" data-aos="fade-in" data-aos-delay="200">
+            <i class="fab fa-linkedin"></i>
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/monaduvvapu/" class="text-blue" target="_blank">monaduvvapu</a>
+          </div>
+		  <div class="card" data-aos="fade-in" data-aos-delay="300">
+            <i class="fas fa-phone"></i>
+            <h3>Phone</h3>
+            <p>+1 (765)-543-7987</p>
+          </div>
+        </div>
+		</div>
+		</section>
 
   </main><!-- End #main -->
+  
+  
 
   <!-- ======= Footer ======= -->
   <footer id="footer">

@@ -146,6 +146,7 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
+  font-family: Verdana !important;
 }
 
 .navbar li {
@@ -155,14 +156,14 @@ h6 {
 .navbar a,
 .navbar a:focus {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 15px;
   color: #151515;
-  text-transform: uppercase;
   white-space: nowrap;
   transition: 0.3s;
+  font-family: Verdana !important;
 }
 
 .navbar a i,
@@ -1125,48 +1126,108 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Breadcrumbs
+# Contact Me
 --------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 40px 0;
-}
 
-.breadcrumbs h2 {
-  font-size: 26px;
-  font-weight: 300;
+.contact {
+  background: white;
+  padding: 3rem 0;
 }
-
-.breadcrumbs ol {
+.contact .section-title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.contact .card-container {
   display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
   flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 15px;
 }
-
-.breadcrumbs ol li+li {
-  padding-left: 10px;
+.contact .card-container .card {
+  background: #fff;
+  width: 260px;
+  margin: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
+  border-radius: 3px;
 }
-
-.breadcrumbs ol li+li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #2f2f2f;
-  content: "/";
+.contact .card-container .card i {
+  font-size: 3.5rem;
+  color: #3b82f6;
+  margin-bottom: 1rem;
+  transition: 0.4s;
 }
-
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
+.contact .card-container .card i:hover {
+  transform: translateY(-20%);
+}
+.contact .card-container .card > * {
+  margin: 0.5rem;
+}
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 3px;
+  box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
+  padding: 2rem;
+}
+.contact form h2 {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+.contact form .form-group input {
+  margin: 0.75rem 0;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #afafaf;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+.contact form .form-group input:focus {
+  outline: none;
+}
+.contact form .form-group textarea {
+  width: 100%;
+  border-radius: 3px;
+  margin: 0.75rem 0;
+  border: 1px solid #afafaf;
+  padding: 0.75rem;
+  font-size: 1rem;
+  resize: vertical;
+}
+.contact form .form-group textarea:focus {
+  outline: none;
+}
+.contact form #status {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 3px;
+  color: #00b700;
+}
+.contact form #status.success {
+  color: #00b700;
+  animation: status 4s ease forwards;
+}
+.contact form #status.error {
+  color: red;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
   }
-
-  .breadcrumbs ol {
-    display: block;
+  90% {
+    opacity: 1;
+    pointer-events: all;
   }
-
-  .breadcrumbs ol li {
-    display: inline-block;
+  100% {
+    opacity: 0;
+    pointer-events: none;
   }
 }
 
