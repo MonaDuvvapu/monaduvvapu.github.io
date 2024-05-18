@@ -45,7 +45,7 @@
 
     <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/tutorials/timelines/timeline-7/assets/css/timeline-7.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/tutorials/timelines/timeline-4/assets/css/timeline-4.css">
   
 	<link
       rel="stylesheet"
@@ -155,39 +155,7 @@
     </section><!-- End About Me Section -->
 
 
-<!--
-    <!-- ======= Education Section ======= 
-    <section id="education" class="education">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Education</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 order-2 order-lg-1">
-            <div class=" mt-5 mt-lg-0" data-aos="fade-up">
-              
-              <h4>Purdue University</h4>
-			  <p><b>Degree:</b> Master of Science</p>
-              <p><b>Major:</b> Business Analytics & Information Management</p>
-			  <p><b>Year:</b> 2023 - 2024 </p>
-            </div>
-			</div>
-			<div class="col-lg-6 order-1 order-lg-2">
-            <div class="mt-5 mt-lg-0" data-aos="fade-up" >
-              
-              <h4>Chaitanya Bharathi Institute of Technology</h4>
-              <p><b>Degree:</b> Bachelor of Engineering</p>
-              <p><b>Major:</b> Information Technology</p>
-			  <p><b>Years:</b> 2016 - 2020</p>
-            </div>
-          </div>
-		  </div>
-
-      </div>
-    </section><!-- End Education Section -->
-
-    <!-- Timeline 7 - Bootstrap Brain Component -->
+    <!-- Timeline 7 - Education Component -->
 <section id="education" class="education bsb-timeline-7 bg-light py-3 py-md-5 py-xl-8">
   <div class="container">
    <div class="section-title" data-aos="fade-up">
@@ -245,59 +213,127 @@
 
 
 
-    <!-- ======= Experience Section ======= -->
-    <section id="experience" class="experience">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
+<!-- Timeline 4 - Bootstrap Brain Component -->
+<section id="experience" class="experience bsb-timeline-4 bg-light py-3 py-md-5 py-xl-8">
+  <div class="container">
+  <div class="section-title" data-aos="fade-up">
           <h2>Work Experience</h2>
         </div>
+    <div class="row justify-content-center">
+      <div class="col-10 col-md-12 col-xl-10 col-xxl-9 fade-up">
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Prediction Guard</h4>
-                <p>Technical Consultant</p>
-                <div class="portfolio-links">
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i>More Details</a>
+        <ul class="timeline">
+          <li class="timeline-item left">
+            <div class="timeline-body">
+              <div class="timeline-meta">
+                <div class="d-inline-flex flex-column px-2 py-1 text-success-emphasis bg-success-subtle border border-success-subtle rounded-2 text-md-end">
+                  <span>Jan 2024 - Mar 2024</span>
+                </div>
+              </div>
+              <div class="timeline-content timeline-indicator">
+                <div class="card border-0 shadow">
+                  <div class="card-body p-xl-4">
+                    <h2 class="card-title mb-2">Technical Consultant</h2>
+                    <h6 class="card-subtitle text-secondary mb-3">Prediction Guard</h6>
+                    <ul class="card-text m-0">
+						<li>
+						 Implemented federated learning (FL) framework across simulated clients, enabling privacy-preserving model and complying with policies like GDPR, HIPAA, CCPA.
+						</li>
+						<li>
+						Optimized and deployed large language models (LLMs) like mBART on high-performance cloud computing (HPC) servers, reducing model size by 99.5% (from 2.9GB to 3.1MB) using efficient Adapter modules to facilitate federated learning on devices with resource limitations.
+						</li>
+						<li>
+						Executed FL for image classification on CIFAR-10 dataset, achieving 92% accuracy with 50ms training time per round.
+						</li>
+						<li>
+						Outperformed centralized approach by 3% in accuracy for federated text classification on IMDB dataset with BERT model.
+						</li>
+						</ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Ford Motor Company</h4>
-                <p>DevOps Engineer</p>
-                <div class="portfolio-links">
-				<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i>More Details</a>
+          </li>
+          <li class="timeline-item right">
+            <div class="timeline-body">
+              <div class="timeline-meta">
+                <div class="d-inline-flex flex-column px-2 py-1 text-success-emphasis bg-success-subtle border border-success-subtle rounded-2 text-md-end">
+                  <span>May 2022 - Jul 2023</span>
+                </div>
+              </div>
+              <div class="timeline-content timeline-indicator">
+                <div class="card border-0 shadow">
+                  <div class="card-body p-xl-4">
+                    <h2 class="card-title mb-2">Sr. DevOps Engineer</h2>
+                    <h6 class="card-subtitle text-secondary mb-3">Ford Motor Company</h6>
+                    <ul class="card-text m-0">
+						<li>Implemented end-to-end CI/CD pipelines, leveraging Jenkins to enable automated deployment of code from Git, and applying SRE principles and reduced deployment time by 45% for 8 projects.</li>
+						<li>Automated access provisioning for the web application, cutting fulfillment time for data requests by 35% for Level 1 team and created health validation checks and alerts for production servers improving availability by approx. 20%.</li>
+						<li>Integrated Checkmarx (SAST Tool) into the deployment pipelines, reducing security vulnerabilities in Git code by 95%.</li>
+						<li>Orchestrated the migration from AEM 6.4 to AEM 6.5, overseeing all stages from initial assessment to final deployment.</li>
+					</ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>HMWSSB</h4>
-                <p>Web Application Developer Intern</p>
-                <div class="portfolio-links">
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i>More Details</a>
+          </li>
+		  
+		<li class="timeline-item left">
+            <div class="timeline-body">
+              <div class="timeline-meta">
+                <div class="d-inline-flex flex-column px-2 py-1 text-success-emphasis bg-success-subtle border border-success-subtle rounded-2 text-md-end">
+                  <span>Dec 2020 - Apr 2022</span>
+                </div>
+              </div>
+              <div class="timeline-content timeline-indicator">
+                <div class="card border-0 shadow">
+                  <div class="card-body p-xl-4">
+                    <h2 class="card-title mb-2">DevOps Engineer</h2>
+                    <h6 class="card-subtitle text-secondary mb-3">Ford Motor Company</h6>
+                    <ul class="card-text m-0">
+						<li>
+						 Developed ETL processes to ingest multi-format data from higher environments to test environments, including images and videos - reduced manual efforts by 50% and accelerated user acceptance testing.</li>
+						<li>
+						Architected and maintained secure data infrastructure on Linux servers and CDN, following cyber security best practices to ensure integrity of sensitive information.</li>
+						<li>
+						Led the coordination between business stakeholders and domain provisioning team for eCommerce websites of 5 countries.</li>
+						<li>
+						Troubleshot and resolved network-related issues for all the markets due to network misconfigurations and API failures
+						</li>
+						</ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </li>
 
-        </div>
+			<li class="timeline-item right">
+            <div class="timeline-body">
+              <div class="timeline-meta">
+                <div class="d-inline-flex flex-column px-2 py-1 text-success-emphasis bg-success-subtle border border-success-subtle rounded-2 text-md-end">
+                  <span>Jul 2020 - Dec 2020</span>
+                </div>
+              </div>
+              <div class="timeline-content timeline-indicator">
+                <div class="card border-0 shadow">
+                  <div class="card-body p-xl-4">
+                    <h2 class="card-title mb-2">Application Support Analyst</h2>
+                    <h6 class="card-subtitle text-secondary mb-3">Ford Motor Company</h6>
+                    <ul class="card-text m-0">
+						<li>Collaborated with product teams to ensure adherence to global Critical Success Factor & Critical to Quality metrics and resolved 100% of data issues reported by internal customers within SLA.</li>
+					</ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
 
       </div>
-    </section><!-- End Experience Section -->
+    </div>
+  </div>
+</section>
 
     <!-- ======= Recommendations Section ======= -->
     <section id="testimonials" class="testimonials">
