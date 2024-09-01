@@ -33,9 +33,9 @@ jobs:
           username: ${{ secrets.EC2_USERNAME }}
           key:  ${{ secrets.EC2_PRIVATE_KEY }}
           script: | 
-            docker stop monaduvvapu-website || true
-            docker rm monaduvvapu-website || true
-            docker pull ${{ secrets.DOCKER_USERNAME }}/monaduvvapu-website:${{ github.sha }}
-            docker run -d --name monaduvvapu-website -p 80:80 ${{ secrets.DOCKER_USERNAME }}/monaduvvapu-website:${{ github.sha }}
+            sudo docker stop monaduvvapu-website || true
+            sudo docker rm monaduvvapu-website || true
+            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/monaduvvapu-website:${{ github.sha }}
+            sudo docker run -d --name monaduvvapu-website -p 80:80 ${{ secrets.DOCKER_USERNAME }}/monaduvvapu-website:${{ github.sha }}
           
       
