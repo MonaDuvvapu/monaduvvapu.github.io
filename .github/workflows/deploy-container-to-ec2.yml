@@ -24,7 +24,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: monaduvvapu/monaduvvapu-website:{{ github.sha }}
+          tags: monaduvvapu/monaduvvapu-website:${{ github.sha }}
 
       - name: Deploy to EC2 instance
         uses: appleboy/ssh-action@master
@@ -36,6 +36,6 @@ jobs:
             docker stop monaduvvapu-website || true
             docker rm monaduvvapu-website || true
             docker pull ${{ secrets.DOCKER_USERNAME }}/monaduvvapu-website:${{ github.sha }}
-            docker run -d --name webapp -p 80:80 ${{ secrets.DOCKER_USERNAME }}/monaduvvapu-website:${{ github.sha }}
+            docker run -d --name monaduvvapu-website -p 80:80 ${{ secrets.DOCKER_USERNAME }}/monaduvvapu-website:${{ github.sha }}
           
       
